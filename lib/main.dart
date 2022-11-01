@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'data/datasource/remote_data_source.dart';
 import 'pressentation/ui/home.dart';
 
 void main() {
@@ -13,6 +14,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    RemoteDataSource  remoteDataSource=RemoteDataSource();
+    remoteDataSource.getMarketStack();
     return GetMaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(

@@ -1,3 +1,5 @@
+import '../entities/entitie.dart';
+
 abstract class GetMarketRepo{
-  getMarketList();
+Future<List<Data>>  getMarketList();
 }
