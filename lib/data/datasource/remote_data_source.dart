@@ -17,6 +17,7 @@ class RemoteDataSource implements BaseRemoteDataSource {
 
       List<Data> a = List<Data>.from(
           response.data["data"].map((e) => EntitieModel.fromJson(e)));
+
     return a;
     } catch (e) {
       return [];

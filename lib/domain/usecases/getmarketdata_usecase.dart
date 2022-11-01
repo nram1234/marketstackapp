@@ -1,5 +1,5 @@
 import '../entities/entitie.dart';
-import '../repo/getmarket.dart';
+import '../repo/getmarket_domain.dart';
 
 class GetMarketStack{
   final GetMarketRepo getMarketRepo;
