@@ -25,7 +25,8 @@ class Home extends GetView<HomeController> {
                           return Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Card(
-                              child: Column(children: [
+                              child: Column(crossAxisAlignment: CrossAxisAlignment.start,children: [
+
                                 Text("date :${logic.a?[pos].date}"),
                                 Text("high :${logic.a?[pos].high}"),
                                 Text("adjClose :${logic.a?[pos].adjClose}"),
